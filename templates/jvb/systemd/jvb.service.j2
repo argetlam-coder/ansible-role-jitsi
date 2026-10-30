@@ -21,7 +21,7 @@ ExecStartPre={{ devture_systemd_docker_base_host_command_docker }} create \
       --rm \
       --name={{ jitsi_identifier }}-jvb \
       --log-driver=none \
-      --user={{ jitsi_uid }}:{{ jitsi_gid }} \
+      --user={{ jitsi_container_uid }}:{{ jitsi_container_gid }} \
       --read-only \
       --network={{ jitsi_container_network }} \
       --network-alias=jvb.meet.jitsi \

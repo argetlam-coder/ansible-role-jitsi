@@ -19,6 +19,12 @@ jitsi_version: stable-11248-2
 jitsi_uid: ""
 jitsi_gid: ""
 
+# Controls the user that the containers run as. Set to `0` to run as root.
+jitsi_container_uid: "{{ jitsi_uid }}"
+
+# Controls the group that the containers run as. Set to `0` to run as root.
+jitsi_container_gid: "{{ jitsi_gid }}"
+
 # The hostname at which Jitsi is served.
 jitsi_hostname: ""
 
